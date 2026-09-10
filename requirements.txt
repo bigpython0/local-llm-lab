@@ -1,0 +1,6 @@
+ollama
+numpy
+langchain-ollama
+langchain-core
+openai
+chromadb
