@@ -53,7 +53,7 @@ ids = [f"doc_id_{i}" for i in range(len(meine_chunks))] # ID für jeden Chunk
 print("Generiere Embeddings und füttere Datenbank...")
 embeddings = [get_embedding(doc) for doc in meine_chunks] # ist einfach eine liste von floats
 
-collection.add( # collection eine liste aus zeilen. Jede Zeile bedeutet:
+collection.upsert( # upsert statt add, sonst crasht es beim zweiten start wegen den ids
     embeddings=embeddings, #embedding vektor
     documents=meine_chunks, #originaler text
     ids=ids # eindeutige ID

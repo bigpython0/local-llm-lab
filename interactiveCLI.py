@@ -45,10 +45,8 @@ def local_llm():
 
                     content += chunk.message.content
 
-                
-            
-            
-            
+            # sonst weiß er beim nächsten mal nicht mehr was er geantwortet hat
+            messages.append({"role": "assistant", "content": content})
 
             #print(f"Bot: {botAntwort}\n")
 

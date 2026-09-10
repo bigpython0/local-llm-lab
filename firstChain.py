@@ -25,7 +25,7 @@ def main():
     print("Bot-Antwort:")
 
     # statt antwort = chain.invoke(...)
-    for chunk in chain.stream({"thema": "Git"}):
+    for chunk in chain.stream({"thema": userInput}):
         print(chunk, end="", flush=True) # schreibt live ins Terminal
     
     
