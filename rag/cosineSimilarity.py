@@ -13,7 +13,6 @@ emb_python = ollama.embeddings(model=model_name, prompt="Python ist eine tolle P
 emb_java = ollama.embeddings(model=model_name, prompt="Ich liebe es, Code mit Java zu schreiben.")['embedding']
 emb_wetter = ollama.embeddings(model=model_name, prompt="Heute ist das Wetter draußen ziemlich bewölkt.")['embedding']
 
-#ähnlichkeit Berechnen
 sim_python_java = cosine_similarity(emb_python, emb_java)
 sim_python_wetter = cosine_similarity(emb_python, emb_wetter)
 
