@@ -9,6 +9,7 @@ kleine skripte zum ki/llm grundlagen lernen, alles lokal mit ollama (kein api ke
    ```
    ollama pull qwen2.5:7b
    ollama pull nomic-embed-text
+   ollama pull llava
    ```
 3. dependencies installieren:
    ```
@@ -23,6 +24,7 @@ kleine skripte zum ki/llm grundlagen lernen, alles lokal mit ollama (kein api ke
 - `firstChain.py` – erste langchain pipeline (prompt -> modell -> parser), mit streaming
 - `interactiveCLI.py` – chat loop mit conversation history
 - `fullRAG.py` – komplettes RAG beispiel: text in chunks teilen, embedden, in chromadb speichern, bei einer frage den passenden chunk suchen und dem modell als kontext geben
+- `vision/scanImage.py` – chat loop mit einem vision-modell (llava): bild per pfad einbinden, dann fragen dazu stellen
 
 am besten in der reihenfolge oben lesen, baut so ungefähr aufeinander auf.
 
@@ -31,3 +33,4 @@ am besten in der reihenfolge oben lesen, baut so ungefähr aufeinander auf.
 - `fullRAG.py` holt sich nur den einen ähnlichsten chunk (n_results=1), kein reranking
 - history in `interactiveCLI.py` wird nicht gespeichert (geht nach dem beenden verloren)
 - alles auf deutsche prompts ausgelegt, nicht getestet mit anderen sprachen
+- `vision/scanImage.py` hat noch ein paar offene stellen (auskommentierter code, ein debug-print) – bewusst so gelassen, ist teil des lernprozesses
