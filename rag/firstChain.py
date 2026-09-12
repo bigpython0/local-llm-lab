@@ -26,7 +26,7 @@ def main():
 
     # statt antwort = chain.invoke(...)
     for chunk in chain.stream({"thema": userInput}):
-        print(chunk, end="", flush=True)
+        print(chunk, end="", flush=True) # schreibt live ins Terminal
     
     
     #print(antwort)
