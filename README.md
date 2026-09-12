@@ -36,4 +36,4 @@ am besten in der reihenfolge oben lesen, baut so ungefähr aufeinander auf.
 - `fullRAG.py` holt sich nur den einen ähnlichsten chunk (n_results=1), kein reranking
 - history in `interactiveCLI.py` wird nicht gespeichert (geht nach dem beenden verloren)
 - alles auf deutsche prompts ausgelegt, nicht getestet mit anderen sprachen
-- `vision/scanImage.py` hat noch ein paar offene stellen (auskommentierter code, ein debug-print) – bewusst so gelassen, ist teil des lernprozesses
+- `vision/scanImage.py` hat noch ein paar offene stellen (auskommentierter code, ein debug-print)
