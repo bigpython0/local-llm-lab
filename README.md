@@ -1,4 +1,4 @@
-# ai-basics
+# local-llm-lab
 
 kleine skripte zum ki/llm grundlagen lernen, alles lokal mit ollama (kein api key nötig).
 
@@ -16,7 +16,7 @@ kleine skripte zum ki/llm grundlagen lernen, alles lokal mit ollama (kein api ke
    pip install -r requirements.txt
    ```
 
-## dateien
+## rag/
 
 - `basicAPIUse.py` – einfachster chat-call an ein lokales modell
 - `embedding.py` – text in einen vektor umwandeln (embeddings)
@@ -24,9 +24,12 @@ kleine skripte zum ki/llm grundlagen lernen, alles lokal mit ollama (kein api ke
 - `firstChain.py` – erste langchain pipeline (prompt -> modell -> parser), mit streaming
 - `interactiveCLI.py` – chat loop mit conversation history
 - `fullRAG.py` – komplettes RAG beispiel: text in chunks teilen, embedden, in chromadb speichern, bei einer frage den passenden chunk suchen und dem modell als kontext geben
-- `vision/scanImage.py` – chat loop mit einem vision-modell (llava): bild per pfad einbinden, dann fragen dazu stellen
 
 am besten in der reihenfolge oben lesen, baut so ungefähr aufeinander auf.
+
+## vision/
+
+- `scanImage.py` – chat loop mit einem vision-modell (llava): bild per pfad einbinden, dann fragen dazu stellen
 
 ## bekannte einschränkungen
 
