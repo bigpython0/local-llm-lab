@@ -30,6 +30,7 @@ am besten in der reihenfolge oben lesen, baut so ungefähr aufeinander auf.
 ## vision/
 
 - `scanImage.py` – chat loop mit einem vision-modell (llava): bild per pfad einbinden, dann fragen dazu stellen
+- `renameImages.py` – pipeline die einen ordner voller bilder einliest, jedes bild von llava beschreiben lässt, die beschreibung von qwen2.5 zu einem kurzen dateinamen verdichtet und die datei entsprechend umbenennt
 
 ## bekannte einschränkungen
 

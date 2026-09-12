@@ -7,7 +7,7 @@ def appendImage(path):
     images.append(path)
 
 def local_llm():
-    systemPrompt = ("you are supposed to analyse pictures for me")
+    systemPrompt = ("describe the content of the image")
     messages = [
         {"role": "system", "content": systemPrompt}
     ]
