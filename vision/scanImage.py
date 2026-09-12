@@ -35,7 +35,7 @@ def local_llm():
                 aktuelleHistorie = [messages[0]] + messages[-5:]
                 print([m.get("images") for m in aktuelleHistorie])
                 response = ollama.chat(
-                            model="llava",  # Stelle sicher, dass du dieses Modell gepullt hast
+                            model="llava",
                             messages=aktuelleHistorie
                         )
                 aktuelleHistorie.append(response['message'])
