@@ -54,9 +54,9 @@ print("Generiere Embeddings und füttere Datenbank...")
 embeddings = [get_embedding(doc) for doc in meine_chunks] # ist einfach eine liste von floats
 
 collection.upsert( # upsert statt add, sonst crasht es beim zweiten start wegen den ids
-    embeddings=embeddings,
-    documents=meine_chunks,
-    ids=ids
+    embeddings=embeddings, #embedding vektor
+    documents=meine_chunks, #originaler text
+    ids=ids # eindeutige ID
 )
 print("Daten erfolgreich gespeichert!\n")
 
